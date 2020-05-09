@@ -1,14 +1,14 @@
 package app;
 public class Operand {
-    private int value;
+    private double value;
 
 
-    public int Get_value()
+    public double Get_value()
     {
         return value;
     }
 
-    public void Set_value(int num)
+    public void Set_value(double num)
     {
         value = num;
     }

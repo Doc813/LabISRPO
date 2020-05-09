@@ -4,23 +4,23 @@ public class Calculator {
     private Operand second_op = new Operand();
     private char operation;
 
-    public void Set_First_op(int num)
+    public void Set_First_op(double num)
     {
         first_op.Set_value(num);
     }
 //  :)  ©KyKyX  
 // --> := <=> ~@ #[ #{   +++ ++ *** <| |>  <!--  <<- 
-public void Set_Second_op(int num)
+public void Set_Second_op(double num)
     {
         second_op.Set_value(num);
     }
 
-    public int Get_first_op()
+    public double Get_first_op()
     {
         return first_op.Get_value();
     }
 
-    public int Get_second_op()
+    public double Get_second_op()
     {
         return second_op.Get_value();
     }
@@ -41,6 +41,8 @@ public void Set_Second_op(int num)
                 return first_op.Get_value()*second_op.Get_value();
             case '/':
                 return first_op.Get_value()/second_op.Get_value();
+            case '^':
+                return Math.pow(first_op.Get_value(), second_op.Get_value());
         }
         return -1;
     }
