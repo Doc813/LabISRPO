@@ -1,0 +1,54 @@
+{
+	"IfBoolReturn": {
+		 	"prefix": "ibr",
+		 	"body": [
+				 "if ($1)",
+				 "return;"
+		 	],
+		 	"description": "return void func"
+		 },
+
+		 "CreateNewClass": {
+			"prefix": "cc",
+			"body": [
+				"public class $1 {",
+					"void Constructor()",
+					"{",
+						"$2",
+					"}",
+				"}" 
+			],
+			"description": "Create new class"
+		},
+
+		"IntToString": {
+			"prefix": "its",
+			"body": [
+				"String $1 = String.valueOf($2);"
+			],
+			"description": "Convert int value to string"
+		},
+
+		"WhileTrue": {
+			"prefix": "wt",
+			"body": [
+				"while (true)",
+				"{",
+				"$1",
+				"if($2)",
+				"break;",
+				"}"
+			],
+			"description": "While true"
+		},
+		
+		"ForIntI": {
+			"prefix": "fii",
+			"body": [
+				"for (int i = 0; i < $1; i++) {",
+				"$2",
+				"}"
+			],
+			"description": "For int i to num"
+		}
+}
