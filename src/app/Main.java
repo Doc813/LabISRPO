@@ -29,7 +29,7 @@ public class Main {
     public static char getOperation() {
         System.out.println("Введите операцию:");
         char operation;
-        String ops = "+-*/";
+        String ops = "+-*/^";
         if (scanner.hasNext()) {
             char op = scanner.next().charAt(0);
             if (ops.indexOf(op)!=-1)
