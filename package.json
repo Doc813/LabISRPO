@@ -14,9 +14,9 @@
 	"activationEvents": [
 		"*",
 		"onCommand:extension.addJsFileHeader",
-		"onLanguage:javascript"
+		"onLanguage:java"
 	],
-	"main": "./extension.js",
+	"main": "./src/app/Main.java",
 	"contributes": {
 		"configuration": {
 			"type": "object",
@@ -53,7 +53,7 @@
 	"scripts": {
 		"lint": "eslint .",
 		"pretest": "npm run lint",
-		"test": "node ./test/runTest.js"
+		"test": "node ./src/test/OperandTests.java"
 	},
 	"devDependencies": {
 		"@types/vscode": "^1.45.0",
