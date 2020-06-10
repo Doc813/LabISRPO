@@ -1,6 +1,8 @@
 [submodule "Submodule"]
 	path = Submodule
 	url = https://github.com/Doc813/Submodule
+	branch = stable
 [submodule "ProjectInfo"]
 	path = ProjectInfo
 	url = https://github.com/Doc813/ProjectInfo
+	branch = stable
