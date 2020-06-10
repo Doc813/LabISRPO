@@ -12,7 +12,9 @@ public class Main {
         double result = calc.Calculate();
         System.out.println("Результат операции: " + result);
     }
-
+    /**
+     * Check for Kraken
+     */
     public static double getDouble() {
         System.out.println("Введите число:");
         double num;
