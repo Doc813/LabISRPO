@@ -13,7 +13,7 @@ public class Main {
         System.out.println("Результат операции: " + result);
     }
     /**
-     * Check for Kraken)
+     * Check for Kraken)sfsdf
      */
     public static double getDouble() {
         System.out.println("Введите число:");
