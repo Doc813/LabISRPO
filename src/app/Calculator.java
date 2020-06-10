@@ -43,6 +43,10 @@ public void Set_Second_op(double num)
                 return first_op.Get_value()/second_op.Get_value();
             case '^':
                 return Math.pow(first_op.Get_value(), second_op.Get_value());
+            case '%':
+                return first_op.Get_value()%second_op.Get_value();
+            case 'i':
+                return (first_op.Get_value()-first_op.Get_value()%second_op.Get_value())/second_op.Get_value();
         }
         return -1;
     }
